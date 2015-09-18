@@ -68,9 +68,12 @@ module.exports = {
     tempHtmlCache: false, //是否开启模版的html缓存，当输出模版需要大量数据库或缓存I/O操作，且实时性要求不高时可以使用
     tempCacheTime: 0,//模版缓存时间
     tempCacheFolder: '/tmp/tpl', //模版缓存 存放目录
+//redis 配置
+
+    RedisIp:'112.74.195.66',
 //mongodb 配置
     isMongodb: false, //是否开启mongodb支持，注意：如果使用数据库存储session，这里必须开启
-    MongodbIp: '127.0.0.1', //mongodb地址
+    MongodbIp: '112.74.195.66', //mongodb地址
     MongodbRC: false,//如果是false表示不使用mongodb的副本集，否则为字符串，表示副本集的名称
     MongodbRChost: [],//表示mongodb副本集的ip:port数组。
     MongodbPort: 27017, //mongodb端口
