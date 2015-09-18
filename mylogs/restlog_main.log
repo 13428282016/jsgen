@@ -1,0 +1,84 @@
+[2015-09-18 15:49:42.793] [ERROR] angularjs.cn - { [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+  domainEmitter: 
+   { stream: 
+      { _connecting: false,
+        _handle: null,
+        _readableState: [Object],
+        readable: false,
+        domain: [Object],
+        _events: [Object],
+        _maxListeners: 10,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        onend: null,
+        destroyed: true,
+        bytesRead: 0,
+        _bytesDispatched: 0,
+        _pendingData: null,
+        _pendingEncoding: '',
+        pipe: [Function],
+        addListener: [Function: addListener],
+        on: [Function: addListener],
+        pause: [Function],
+        resume: [Function],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     options: { connect_timeout: 5000, socket_nodelay: true },
+     connection_id: 1,
+     connected: false,
+     ready: false,
+     connections: 0,
+     should_buffer: false,
+     command_queue_high_water: 1000,
+     command_queue_low_water: 0,
+     max_attempts: null,
+     command_queue: { tail: [], head: [], offset: 0 },
+     offline_queue: { tail: [], head: [], offset: 0 },
+     commands_sent: 0,
+     connect_timeout: 5000,
+     enable_offline_queue: true,
+     retry_max_delay: null,
+     retry_timer: null,
+     retry_totaltime: 0,
+     retry_delay: 150,
+     retry_backoff: 1.7,
+     attempts: 1,
+     pub_sub_mode: false,
+     subscription_set: {},
+     monitoring: false,
+     closing: false,
+     server_info: {},
+     auth_pass: null,
+     parser_module: null,
+     selected_db: null,
+     old_state: null,
+     domain: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: 10,
+        members: [] },
+     _events: {},
+     _maxListeners: 10,
+     port: 6379,
+     host: '127.0.0.1' },
+  domainThrown: false }
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (D:\git\jsgen\node_modules\redis\index.js:185:24)
+    at Socket.<anonymous> (D:\git\jsgen\node_modules\redis\index.js:95:14)
+    at Socket.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickDomainCallback (node.js:492:13)
+[2015-09-18 15:49:43.816] [ERROR] angularjs.cn - [Error: failed to connect to [127.0.0.1:27017]]
+Error: failed to connect to [127.0.0.1:27017]
+    at null.<anonymous> (D:\git\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:553:74)
+    at emit (events.js:106:17)
+    at null.<anonymous> (D:\git\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:140:15)
+    at emit (events.js:98:17)
+    at Socket.<anonymous> (D:\git\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection.js:512:10)
+    at Socket.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickDomainCallback (node.js:492:13)
